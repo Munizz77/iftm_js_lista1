@@ -4,13 +4,15 @@ Prova 1 da disciplina "Programação para Dispositivos Móveis" (IFTM).
 
 Conteúdo: JavaScript ES6+.
 
+
 ## Enviando as soluções dos exercícios
 
-1. Faça o Fork desse repositório conforme ensinado na primeira aula;
+1. Faça o Fork desse repositório;
 2. Faça o clone do repositório que foi criado no seu **perfil** após o Fork, na sua máquina;
-3. Dentro da pasta "src", crie uma nova pasta com o seu NomeSobrenome. Ex: ./src/LucasMoura
-4. Dentro da pasta criada,  adicione um arquivo index.js, você deverá adicionar todos os exercícios na forma de funções (arrow functions).
-5. No arquivo `package.json`, você deverá criar criar uma nova linha em scripts, sendo o nome do script igual ao nome da pasta criada (tudo minúsculo), exemplo:
+3. Dentro da pasta do projeto, digite o comando `yarn` para baixar todas as dependências na sua máquina;
+4. Dentro da pasta "src", crie uma nova pasta com o seu NomeSobrenome. Ex: ./src/LucasMoura
+5. Dentro da pasta criada,  adicione um arquivo index.js, você deverá adicionar todos os exercícios na forma de funções (arrow functions).
+6. No arquivo `package.json`, você deverá criar criar uma nova linha em scripts, sendo o nome do script igual ao nome da pasta criada (tudo minúsculo), exemplo:
 
 Considere que a seguinte pasta foi criada:
 `./src/LucasMoura/index.js`
@@ -25,12 +27,12 @@ Arquivo package.json
 ```
 
 
-6. Após concluído, faça o envio dos commits com o comando push. 
+7. Após concluído, faça o envio dos commits com o comando push. 
 Obs: você deverá fazer os commits e o push no repositório que está na sua conta do GitHub, criado através do botão Fork.
-7. Após confirmar os commits, faça uma "Pull request" do seu repositório selecionando o repositório original como destino. Informar o nome completo do aluno na descrição da PR (pull-request).
+8. Após confirmar os commits, faça uma "Pull request" do seu repositório selecionando o repositório original como destino. Informar o nome completo do aluno na descrição da PR (pull-request).
 
 ## Exercícios
-Todos os exercícios abaixo deverão ser feitos em funções separadas, utilizando arrow functions. As funções que apenas retornam uma informação, deverão utilizar a forma simplificada de arrow function (1 linha).
+As arrow functions que retornam apenas uma informação, deverão utilizar a forma simplificada de arrow function (1 linha).
 
 1- Crie uma função (com arrow function e desestruturação) que dado o objeto no formato a seguir:
 ```javascript
