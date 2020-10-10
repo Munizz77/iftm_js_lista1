@@ -1,3 +1,6 @@
+/*
+    Boa prova!
+*/
 const exercicio1 = () => {
     alert('Teste');
 };
