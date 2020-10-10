@@ -120,3 +120,7 @@ Deverá retornar um novo array com os objetos mapeados (`map`):
 
 5- Utilizando o array do exercício anterior, faça uma busca qualquer (ex: por `id`) que deverá utilizar a função `find` (com arrow function). Caso o usuário tenha sido encontrado, deverá exibir uma mensagem no console dizendo que o usuário foi encontrado. Também deverá exibir uma mensagem se o usuário não for encontrado. 
 
+
+### Desafio
+Caso seja criado uma interface amigável no HTML para testar os exercícios, poderá ganhar **+1 ponto extra**.
+
