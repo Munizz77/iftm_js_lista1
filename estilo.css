@@ -116,14 +116,13 @@ nav a:hover {
     margin-bottom: 0.8em;
 }
 
-#caixaSelecao{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5em;    
+.metodos {
+    margin-bottom: 1.2em;
 }
 
-#caixaSelecao span {
-    margin-right: 0.5em;
+.valoresTeste{
+    font-style: italic;
+    font-size: 0.8em;
 }
 
 .resolucao {

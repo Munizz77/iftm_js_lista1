@@ -5,8 +5,12 @@ const users = [
 ];
 
 const resolucaoExercicio01 = document.querySelector('.exercicio01');
-const resolucaoExercicio02 = document.querySelector('.exercicio02');
-const caixaSelecaoResolucao = document.querySelector('#selecionaResolucao');
+const resolucaoExercicio02A = document.querySelector('.gerarPares');
+const resolucaoExercicio02B = document.querySelector('.gerarImpares');
+const resolucaoExercicio02C = document.querySelector('.somarTudoOp01');
+const resolucaoExercicio02D = document.querySelector('.somarTudoOp02');
+const resolucaoExercicio02E = document.querySelector('.descartarOsDoisPrimeiros');
+const resolucaoExercicio02F = document.querySelector('.juntarArrays');
 const resolucaoExercicio03 = document.querySelector('.exercicio03');
 const resolucaoExercicio04 = document.querySelector('.exercicio04');
 const resolucaoExercicio05 = document.querySelector('.exercicio05');
@@ -34,7 +38,7 @@ const exercicio1 = (elementoHtml) => {
     elementoHtml.innerHTML = html;
 };
 
-const exercicio2 = (elementoHtml, caixaSelecaoResolucao) => {
+const exercicio2 = (resolucaoExercicio02A, resolucaoExercicio02B, resolucaoExercicio02C, resolucaoExercicio02D, resolucaoExercicio02E, resolucaoExercicio02F) => {
 
     class Matematica {
 
@@ -42,14 +46,22 @@ const exercicio2 = (elementoHtml, caixaSelecaoResolucao) => {
             if (x % 2 !== 0){
                 x++;
             }
-            imprimirIntervalo(x, y);
+            while(x <= y){
+                let html = `<span>${x}</span><br>`
+                resolucaoExercicio02A.insertAdjacentHTML('beforeend', html);
+                x += 2;
+            }
         }
         
         static gerarImpares(x, y) { 
             if (x % 2 === 0){
                 x++;
             }
-            imprimirIntervalo(x, y);
+            while(x <= y){
+                let html = `<span>${x}</span><br>`
+                resolucaoExercicio02B.insertAdjacentHTML('beforeend', html);
+                x += 2;                
+            }
         }
        
         static somarTudo(...params) {
@@ -66,48 +78,15 @@ const exercicio2 = (elementoHtml, caixaSelecaoResolucao) => {
             const array3 = [...array1, ...array2];
             return array3;
         }
-
     }
 
+    Matematica.gerarPares(5, 200);
+    Matematica.gerarImpares(1, 100);
+    resolucaoExercicio02C.innerHTML = `<span>${Matematica.somarTudo(1, 2, 3, 4)}</span>`;
+    resolucaoExercicio02D.innerHTML = `<span>${Matematica.somarTudo(1, 2, 3, 5, 10, 25, 100)}</span>`;    
+    resolucaoExercicio02E.innerHTML = `<span>${Matematica.descartarOsDoisPrimeiros([100, -5, 10, 20, 3, 9])}</span>`;    
+    resolucaoExercicio02F.innerHTML = `<span>${Matematica.juntarArrays([4, 2], [1, 2, 3])}</span>`;    
 
-
-    function imprimirIntervalo(x, y){
-        while(x <= y){
-            let html = `<span>${x}</span><br>`
-            elementoHtml.insertAdjacentHTML('beforeend', html);
-            x += 2;
-        }
-    }
-
-    //console.log();
-    //console.log(Matematica.juntarArrays([4, 2], [1, 2, 3])); // retorna [4, 2, 1, 2, 3];
-
-    caixaSelecaoResolucao.addEventListener('change', (event)=>{ 
-        elementoHtml.innerHTML = '';
-        const selecao = event.target.value;
-        if (selecao === 'gerarPares'){
-            Matematica.gerarPares(5,200);
-        } else if (selecao === 'gerarImpares'){
-            Matematica.gerarImpares(1,100);
-        } else if (selecao === 'somarOp1'){
-            const resultado = Matematica.somarTudo(1, 2, 3, 4);
-            let html = `<span>${resultado}</span>`;
-            elementoHtml.innerHTML = html;
-        } else if (selecao === 'somarOp2'){
-            const resultado = Matematica.somarTudo(1, 2, 3, 5, 10, 25, 100);
-            let html = `<span>${resultado}</span>`;
-            elementoHtml.innerHTML = html;
-        } else if (selecao === 'descartarOsDoisPrimeiros'){
-            const resultado = Matematica.descartarOsDoisPrimeiros([100, -5, 10, 20, 3, 9]);
-            let html = `<span>${resultado}</span>`;
-            elementoHtml.innerHTML = html;
-        } else if (selecao === 'juntarArrays'){
-            const resultado = Matematica.juntarArrays([4, 2], [1, 2, 3]);
-            let html = `<span>${resultado}</span>`;
-            elementoHtml.innerHTML = html;
-        }
-        
-    })
 };
 
 const exercicio3 = (elementoHtml) => {
@@ -173,7 +152,7 @@ const exercicio5 = (users, elementoHtml) => {
 
 
 exercicio1(resolucaoExercicio01);
-exercicio2(resolucaoExercicio02, caixaSelecaoResolucao);
+exercicio2(resolucaoExercicio02A, resolucaoExercicio02B, resolucaoExercicio02C, resolucaoExercicio02D, resolucaoExercicio02E, resolucaoExercicio02F);
 exercicio3(resolucaoExercicio03);
 exercicio4(users, resolucaoExercicio04);
 exercicio5(users, resolucaoExercicio05);
