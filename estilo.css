@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Barra informação*/
+
+#info-atividade-fundo {
+    background: #23AC45;
+}
+
+#info-atividade {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+#info-atividade p, #info-atividade a {
+    color:white;
+    margin: 0 10px 11px 10px;
+}
+
+/*Menu*/
+
+#menu-fundo {
+    background: #ccc;
+}
+
+#menu {
+    margin: 0 auto;
+    padding: 10px calc((100% - 960px)/2);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menu-logo img {
+    width: 140px;
+}
+
+#info-aluna {
+    margin: 0 auto;
+    padding-top: 40px
+}
+
+#info-aluna span{
+    color: #08661f;
+    font-weight: 700;
+}
+
+#info-aluna p {
+    font-size: 1.05em;
+    max-width: 500px;
+    padding: 0.2em;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav ul {
+	margin: 0;
+    padding: 0;
+}
+nav li {
+	list-style: none;
+	display: inline;
+	padding: 0.6em;
+}
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #08661f;
+	padding: 0;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+nav a:hover {
+	color: #23AC45;
+}
+
+/*Área Exercícios*/
+
+#area-exercicios{
+    background-color:#fff;
+    padding: 0.9em;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.exercicios{
+    padding: 10px;
+    margin-bottom: 3em;
+}
+
+.exercicios h1{
+    text-align: start;
+    margin-bottom: 0.8em;
+}
+
+#caixaSelecao{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em;    
+}
+
+#caixaSelecao span {
+    margin-right: 0.5em;
+}
+
+.resolucao {
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);    
+    flex: flex;
+    flex-wrap: wrap;
+}
