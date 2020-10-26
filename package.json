@@ -7,11 +7,12 @@
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
-    "@babel/preset-env": "^7.11.5"
+    "@babel/preset-env": "^7.11.5",
+    "moment": "^2.29.1"
   },
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w",
     "lucasmoura": "babel ./src/LucasMoura/index.js -o ./bundle.js -w",
-    "luizhenrique": "babel ./src/LuizHenrique/index.js -o ./bundle.js -w",
+    "thaisvilarinho": "babel ./src/ThaisVilarinho/index.js -o ./bundle.js -w"
   }
 }
