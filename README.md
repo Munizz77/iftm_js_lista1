@@ -12,7 +12,7 @@ Conteúdo: JavaScript ES6+.
 3. Dentro da pasta do projeto, digite o comando `yarn` para baixar todas as dependências na sua máquina;
 4. Dentro da pasta "src", crie uma nova pasta com o seu NomeSobrenome. Ex: ./src/LucasMoura
 5. Dentro da pasta criada,  adicione um arquivo index.js, você deverá adicionar todos os exercícios na forma de funções (arrow functions).
-6. No arquivo `package.json`, você deverá criar criar uma nova linha em scripts, sendo o nome do script igual ao nome da pasta criada (tudo minúsculo), exemplo:
+6. No arquivo `package.json`, você deverá criar uma nova linha em scripts, sendo o nome do script igual ao nome da pasta criada (tudo minúsculo), exemplo:
 
 Considere que a seguinte pasta foi criada:
 `./src/LucasMoura/index.js`
