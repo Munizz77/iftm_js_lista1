@@ -123,4 +123,3 @@ Deverá retornar um novo array com os objetos mapeados (`map`):
 
 ### Desafio
 Caso seja criado uma interface amigável no HTML para testar os exercícios, poderá ganhar **+1 ponto extra**.
-
