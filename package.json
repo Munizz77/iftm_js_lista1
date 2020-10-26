@@ -12,5 +12,6 @@
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w",
     "lucasmoura": "babel ./src/LucasMoura/index.js -o ./bundle.js -w"
+    "luizhenrique": "babel ./src/LuizHenrique/index.js -o ./bundle.js -w"
   }
 }
